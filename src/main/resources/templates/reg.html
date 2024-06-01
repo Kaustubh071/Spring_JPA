@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+welcome to Register Page
+
+<form action="#" th:action="@{/reg}"   th:object="${obj}">
+
+Roll : <input type="text" th:field="*{id}"><br>
+Name : <input type="text" th:field="*{name}"><br>
+Address : <input type="text" th:field="*{address}"><br>
+Result : <input type="text" th:field="*{result}"><br>
+
+<input type="submit" value="Register">
+</form>
+</body>
+</html>
